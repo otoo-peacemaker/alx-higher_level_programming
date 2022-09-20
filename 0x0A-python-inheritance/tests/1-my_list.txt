@@ -1,0 +1,31 @@
+>>> MyList = __import__('1-my_list').MyList
+>>> my_list = MyList()
+>>> print(my_list)
+[]
+>>> MyList(None)
+Traceback (most recent call last):
+	...
+TypeError: 'NoneType' object is not iterable
+>>> my_list.print_sorted()
+[]
+>>> my_list.extend([1, 4, 2, 3, 5])
+>>> print(my_list)
+[1, 4, 2, 3, 5]
+>>> my_list.print_sorted()
+[1, 2, 3, 4, 5]
+>>> print(my_list)
+[1, 4, 2, 3, 5]
+>>> my_list.append(13)
+>>> my_list.append(10)
+>>> print(my_list)
+[1, 4, 2, 3, 5, 13, 10]
+>>> my_list.print_sorted()
+[1, 2, 3, 4, 5, 10, 13]
+>>> my_list.pop()
+10
+>>> print(my_list)
+[1, 4, 2, 3, 5, 13]
+>>> my_list.print_sorted()
+[1, 2, 3, 4, 5, 13]
+
+
